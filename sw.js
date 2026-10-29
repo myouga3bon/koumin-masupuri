@@ -1,5 +1,5 @@
 // 公民マスプリテスト：オフラインでも開けるようにするサービスワーカー
-const CACHE = 'kouminMasupuri-202610281722';
+const CACHE = 'kouminMasupuri-202610290651';
 const SHELL = ['./koumin-masupuri.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './icon-maskable-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
